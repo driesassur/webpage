@@ -26,3 +26,19 @@ document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
 
+ // Counter function
+    function animateCounter(elementId, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        document.getElementById(elementId).innerText = Math.floor(progress * (end - start) + start);
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+
+    // Start the counter with element ID, start value, end value, and duration (milliseconds)
+    animateCounter("counter", 0, 1000, 2000); // Counts from 0 to 1000 in 2 seconds
