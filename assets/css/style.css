@@ -153,3 +153,13 @@ back to top
       display:inline-block;
     }
   }
+
+/* Counter*/
+ /* Add styling to center the counter and style the number */
+    .counter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #0056b3; /* Driesassur's branding color */
+      text-align: center;
+      padding: 20px;
+    }
