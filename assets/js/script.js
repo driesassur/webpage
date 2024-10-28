@@ -41,4 +41,4 @@ document.documentElement.scrollTop = 0;
     }
 
     // Start the counter with element ID, start value, end value, and duration (milliseconds)
-    animateCounter("counter", 0, 1000, 2000); // Counts from 0 to 1000 in 2 seconds
+    animateCounter("counter", 0, 1000, 20000); // Counts from 0 to 1000 in 2 seconds
