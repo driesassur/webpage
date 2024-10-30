@@ -169,7 +169,7 @@ back to top
 }
 .col-md-4.number-block .card {
     border: 0px;
-  
+   background-color: #d1e0ee; 
 }
 .col-md-4.number-block .card:hover{
 transform: scale(1.1);
