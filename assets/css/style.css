@@ -175,3 +175,6 @@ back to top
 transform: scale(1.1);
     box-shadow: 10px 5px 10px gray;
 }
+h5#counter4::after {
+    content: "%";
+}
