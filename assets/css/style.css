@@ -159,7 +159,19 @@ back to top
     .counter {
       font-size: 2em;
       font-weight: bold;
-      color: #0056b3; /* Driesassur's branding color */
+      color: #e56b18; /* Driesassur's branding color */
       text-align: center;
       padding: 20px;
     }
+.number-block i.bi{
+    font-size: 45px;
+    color: #004687;
+}
+.col-md-4.number-block .card {
+    border: 0px;
+  
+}
+.col-md-4.number-block .card:hover{
+transform: scale(1.1);
+    box-shadow: 10px 5px 10px gray;
+}
