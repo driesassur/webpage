@@ -103,7 +103,8 @@
               <a class="nav-link">Contact</a>
             </li>
           </ul>
-          <button type="button" class="btn btn-success">Book a Consultation</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Book a Consultation </button>
 
         </div>
       </div>
@@ -177,6 +178,62 @@
       </button>
     </div>
   <!-- -->
+      <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <!-- Name input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+              
+              <label class="form-label" for="name4">Name</label>
+              <input type="text" id="name4" class="form-control" />
+          </div>
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="email4">Email address</label>
+              <input type="email" id="email4" class="form-control" />
+          </div>
+          <!-- Mobile number -->
+          <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="phonenumber">Phone number</label>  
+            <input type="number" id="phonenumber" class="form-control" />
+
+        </div>
+
+          <!-- textarea input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="textarea4">Your message</label>
+              <textarea id="textarea4" rows="4" class="form-control"></textarea>
+          </div>
+
+          <!-- Checkbox 
+          <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="checkbox4" checked />
+              <label class="form-check-label" for="checkbox4">
+                  Send me a copy of this message
+              </label>
+          </div>-->
+
+          <!-- Submit button -->
+          <!-- <button type="submit" data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-block">Send</button> -->
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+      </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!--Modal End-->
 </section>
 <!-- ==============================
  certificate or partner logo -->
